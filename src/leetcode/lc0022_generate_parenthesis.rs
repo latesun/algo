@@ -11,6 +11,7 @@ impl Solution {
         parentheses
     }
 
+    #[allow(clippy::redundant_clone)]
     fn generate(left: i32, right: i32, n: i32, parenthesis: String, parentheses: &mut Vec<String>) {
         if left == n && right == n {
             parentheses.push(parenthesis);
